@@ -1,1 +1,13 @@
+const express = require('express');
+const app = express();
+const port = process.env.PORT || 3000;
+const canalesRouter = require('./routes/canales');
 
+app.use(express.static('public'));
+app.set('view engine', 'ejs');
+app.set('views', __dirname + '/views');
+app.use('/', canalesRouter);
+
+app.listen(port, () => {
+  console.log(`Servidor IPTV funcionando en http://localhost:${port}`);
+});
