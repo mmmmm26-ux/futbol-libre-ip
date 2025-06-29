@@ -1,20 +1,5 @@
 [
   {
-    "nombre": "ESPN",
-    "link": "https://iptv-org.github.io/iptv/channels/us.m3u"
-  },
-  {
-    "nombre": "TUDN",
-    "link": "https://iptv-org.github.io/iptv/channels/mx.m3u"
-  },
-  {
-    "nombre": "DIRECTV Sports",
-    "link": "https://iptv-org.github.io/iptv/channels/ar.m3u"
-  }
-  
-]
-[
-  {
     "nombre": "NASA TV",
     "link": "https://live-hls-web-aje.getaj.net/AJE/01.m3u8"
   }
