@@ -1,1 +1,22 @@
-
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Fútbol Libre IP</title>
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+  <header><h1>📺 Fútbol Libre IP</h1></header>
+  <main>
+    <% canales.forEach(c => { %>
+      <div class="canal">
+        <h2><%= c.nombre %></h2>
+        <video id="player-<%= c.nombre %>" controls preload="none"></video>
+        <button onclick="playChannel('<%= c.nombre %>','<%= c.link %>')">Ver canal</button>
+      </div>
+    <% }) %>
+  </main>
+  <script src="https://cdn.jsdelivr.net/npm/hls.js@latest"></script>
+  <script src="/player.js"></script>
+</body>
+</html>
